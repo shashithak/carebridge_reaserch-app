@@ -1,34 +1,33 @@
 <nav class="navbar">
-    <div class="navbar-container">
-      <!-- Brand Logo -->
-      <div class="navbar-logo">
-        <a routerLink="/home">CareBridge</a>
-      </div>
-  
-      <!-- Navigation Links -->
-      <ul class="navbar-links">
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/dashboard">Dashboard</a></li>
-        <li><a routerLink="/patients">Patients</a></li>
-        <li><a routerLink="/reports">Reports</a></li>
-        <li><a routerLink="/settings">Settings</a></li>
-      </ul>
-  
-      <!-- User Profile -->
-      <div class="navbar-profile">
-        <img src="assets/user-avatar.png" alt="User Avatar" class="profile-avatar">
-        <ul class="profile-dropdown">
-          <li><a routerLink="/profile">Profile</a></li>
-          <li><a routerLink="/logout">Logout</a></li>
-        </ul>
-      </div>
-  
-      <!-- Hamburger Menu for Mobile -->
-      <div class="navbar-toggle" id="mobile-menu" (click)="toggleMenu()">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+  <div class="navbar-container">
+    <!-- Brand Logo -->
+    <div class="navbar-logo">
+      <a routerLink="/home">CareBridge</a>
     </div>
-  </nav>
-  
+
+    <!-- Navigation Links -->
+    <ul class="navbar-links">
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/behavior">Behavior Analysis</a></li>
+      <li><a routerLink="/alerts">Critical Alerts</a></li>
+      <li><a routerLink="/mindcare">MindCare Assist</a></li>
+      <li><a routerLink="/calories">Food Calorie Tracker</a></li>
+    </ul>
+
+    <!-- User Profile -->
+    <div class="navbar-profile">
+      <img src="assets/user-avatar.png" alt="User Avatar" class="profile-avatar">
+      <ul class="profile-dropdown">
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/logout">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="navbar-toggle" id="mobile-menu" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>

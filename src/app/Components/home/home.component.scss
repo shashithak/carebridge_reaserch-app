@@ -1,6 +1,214 @@
-.home-content {
-    margin-top: 70px; /* Add spacing for the navbar height */
-    text-align: center;
-    padding: 20px;
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px; /* Adjust to fit under the navbar */
+  padding: 20px;
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire container */
+  color: #fff; /* Text color for visibility */
+}
+
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive design */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Prevent stretching */
+  margin-top: 20px;
+}
+
+/* Card styling */
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #00f2fe; /* Subtle color change on hover */
   }
-  
+
+  .card-content {
+    padding: 20px;
+    text-align: center;
+    
+    h3.card-title {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #009688; /* Teal color for the title */
+      margin-bottom: 15px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase; /* Digital look */
+      letter-spacing: 2px;
+    }
+
+    p.card-description {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      background-color: #00f2fe;
+      color: white;
+      font-size: 1rem;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #00796b;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* Layout of objectives with icons */
+.objectives-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.objective {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.feature-icon {
+  font-size: 2.5rem; /* Larger icons */
+  color: #009688; /* Icon color matching the theme */
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 5px;
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+/* Dividers */
+mat-divider {
+  margin: 20px 0;
+  background-color: #e0e0e0;
+  border: 0;
+  height: 1px;
+}
+
+/* Size-specific card styling */
+.large-card {
+  grid-column: span 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.medium-card {
+  grid-column: span 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.small-card {
+  grid-column: span 1;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Visuals */
+.visuals {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Light Status */
+.light-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-bar {
+  width: 100px;
+  height: 10px;
+  background: linear-gradient(to right, #00f2fe, #4caf50); /* Light gradient for brightness */
+  border-radius: 5px;
+}
+
+.status-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Sound Status */
+.sound-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.volume-indicator {
+  position: relative;
+  width: 30px;
+  height: 100px;
+  background: #ff9800; /* Volume bar color */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.volume-bar {
+  width: 100%;
+  background: #ff5722; /* Volume level color */
+  border-radius: 10px;
+  transition: height 0.3s ease;
+}
+
+.status-text {
+  font-size: 1rem;
+  color: #555;
+}
+/* Example styling for the assistant SVG */
+.assistant-icon {
+  width: 50px;   /* Set width */
+  height: 50px;  /* Set height */
+  fill: #009688; /* Elegant color for the icon */
+  margin-left: 10px; /* Space between the icon and text */
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+}
+

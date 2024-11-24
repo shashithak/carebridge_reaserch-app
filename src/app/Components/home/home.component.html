@@ -1,5 +1,66 @@
 <app-navbar></app-navbar>
-<div class="home-content">
-  <h1>Welcome to Patient Monitoring System</h1>
-  <p>Monitor your patients efficiently and effectively.</p>
+<div class="home-container">
+  <div class="feature-cards">
+    <div class="feature-card large-card">
+      <div class="card-content">
+        <h3>Mind Care Assist <span class="assistant-emoji">👩‍💼</span></h3>
+        <p>Support for mental well-being, tailored to individual needs.</p>
+        <div class="objectives-summary">
+          <div class="objective">
+            <span class="feature-icon">🎵</span>
+            <h4>Environment Adjustment</h4>
+            <div class="visuals">
+              <div class="light-status">
+                <div class="status-bar" style="width: 75%"></div>
+                <span class="status-text">Brightness: Calm</span>
+              </div>
+              <div class="sound-status">
+                <div class="volume-indicator">
+                  <div class="volume-bar" style="height: 80%"></div>
+                </div>
+                <span class="status-text">Genre: Jazz</span>
+              </div>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="objective">
+            <span class="feature-icon">🧠</span>
+            <h4>ADHD Support</h4>
+            <p>Interactive tasks and games to enhance cognitive ability and focus.</p>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="objective">
+            <span class="feature-icon">🌙</span>
+            <h4>Sleep Pattern Optimization</h4>
+            <p>Improving sleep through data from wearable IoT devices.</p>
+          </div>
+        </div>
+        <a routerLink="/mind-care-assist" class="cta-button">Explore Mind Care Assist</a>
+      </div>
+    </div>
+
+    <div class="feature-card medium-card">
+      <div class="card-content">
+        <h3>Critical Alert Management</h3>
+        <p>Get real-time critical alerts for patient monitoring.</p>
+        <a routerLink="/critical-alerts" class="cta-button">View Alerts</a>
+      </div>
+    </div>
+
+    <div class="feature-card medium-card">
+      <div class="card-content">
+        <h3>Behavior Analysis</h3>
+        <p>Analyze patient behavior patterns for better care insights.</p>
+        <a routerLink="/behavior-analysis" class="cta-button">Analyze</a>
+      </div>
+    </div>
+
+    <div class="feature-card small-card">
+      <div class="card-content">
+        <h3>Food Calorie Tracker</h3>
+        <p>Track and manage food intake for better health outcomes.</p>
+        <a routerLink="/food-calorie-tracker" class="cta-button">Track Calories</a>
+      </div>
+    </div>
+  </div>
 </div>
