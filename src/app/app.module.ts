@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { MindCareAssistComponent } from './Components/mind-care-assist/mind-care-assist.component';
+import { PatientMonitorComponent } from './Components/patient-monitor/patient-monitor.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    MindCareAssistComponent,
+    PatientMonitorComponent
   ],
   imports: [
     BrowserModule,
