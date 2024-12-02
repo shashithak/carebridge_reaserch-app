@@ -28,6 +28,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   overflow: hidden;
   position: relative;
+  width: 600px;
 
   &:hover {
     transform: translateY(-12px);
@@ -212,3 +213,193 @@ mat-divider {
   }
 }
 
+/* Critical Alert Management Card */
+.critical-alert-card {
+  .alert-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 450px;
+    margin: 20px auto;
+  }
+  
+  .card-header h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .card-body {
+    padding-top: 15px;
+  }
+  
+  .alert-status {
+    margin-bottom: 20px;
+  }
+  
+  .status-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .status-item {
+    text-align: center;
+    width: 100px;
+  }
+  
+  .status-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .status-text {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .status-item p {
+    margin-top: 5px;
+  }
+  
+  .active-status {
+    border: 2px solid #d9534f;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(217, 83, 72, 0.1);
+  }
+  
+  .active-status-text {
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  button.btn-danger {
+    background-color: #d9534f;
+    border-color: #d43f00;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+  }
+  
+  
+
+  /* Listening Animation Section (just under the header) */
+  .listening-animation {
+    width: 100%;
+    height: 5px;
+    background-color: #ff1744;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scaleX(0.8);
+      }
+      50% {
+        transform: scaleX(1);
+      }
+      100% {
+        transform: scaleX(0.8);
+      }
+    }
+  }
+
+  /* Status text under listening animation */
+  .status-text {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: 0.8;
+
+    .pulse-message {
+      font-size: 0.9rem;
+      color: rgba(0, 0, 0, 0.9);
+      font-weight: 400;
+      margin-top: 8px;
+      animation: fadeIn 2s ease-out;
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .card-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      .icon-container {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ff5252, #ff1744);
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(255, 23, 68, 0.4), 0 0 15px rgba(255, 23, 68, 0.6);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 15px rgba(255, 23, 68, 0.6);
+        }
+
+        svg {
+          width: 30px;
+          height: 30px;
+          fill: white;
+        }
+      }
+
+      .stat-value {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #b71c1c;
+      }
+
+      .stat-label {
+        font-size: 0.85rem;
+        color: #b71c1c;
+        font-weight: 500;
+      }
+    }
+  }
+}
