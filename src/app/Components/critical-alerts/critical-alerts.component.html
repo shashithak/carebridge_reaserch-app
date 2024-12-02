@@ -1,38 +1,36 @@
-<div class="dashboard">
+<div class="home-container">
+  <div class="dashboard">
     <!-- Patient Condition Status Bar -->
     <div class="condition-container">
       <div class="condition" [ngClass]="{ 'active': currentCondition === 'Asking for help' }">
-        Asking for help
+        <i class="fa fa-question-circle" aria-hidden="true"></i> Asking for help
       </div>
       <div class="condition" [ngClass]="{ 'active': currentCondition === 'Coughing' }">
-        Coughing
+        <i class="fa fa-cough" aria-hidden="true"></i> Coughing
       </div>
       <div class="condition" [ngClass]="{ 'active': currentCondition === 'Screaming' }">
-        Screaming
+        <i class="fa fa-volume-up" aria-hidden="true"></i> Screaming
       </div>
       <div class="condition" [ngClass]="{ 'active': currentCondition === 'Normal' }">
-        Normal
+        <i class="fa fa-smile" aria-hidden="true"></i> Normal
       </div>
       <div class="condition" [ngClass]="{ 'active': currentCondition === 'Critical' }">
-        Critical
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Critical
       </div>
     </div>
-  
+
     <!-- Heart Rate and Blood Pressure Gauges -->
     <div class="gauge-container">
-      <!-- Heart Rate Gauge -->
       <div class="gauge">
         <ngx-gauge [value]="heartRate" [label]="'Heart Rate (bpm)'" [min]="0" [max]="180"></ngx-gauge>
         <div class="gauge-heading">Heart Rate</div>
       </div>
-  
-      <!-- Blood Pressure Gauge -->
       <div class="gauge">
         <ngx-gauge [value]="bloodPressure" [label]="'Blood Pressure (mmHg)'" [min]="0" [max]="200"></ngx-gauge>
         <div class="gauge-heading">Blood Pressure</div>
       </div>
     </div>
-  
+
     <!-- Critical Alerts Section -->
     <div class="alerts">
       <h3>Critical Alerts</h3>
@@ -41,9 +39,9 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Listening Animation -->
   <div class="listening-animation">
     <p>Listening...</p>
   </div>
-  
+</div>

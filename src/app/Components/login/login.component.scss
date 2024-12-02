@@ -1,16 +1,16 @@
 /* Host Container (Background) */
 :host {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000; /* Black background */
-    margin: 0;
-    padding: 0;
-    color: #fff; /* Default text color */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/login111.jpg') no-repeat center center/cover; /* Add your image here */
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Default text color */
+}
+
   /* Header Styling */
   .header {
     display: flex;
@@ -23,20 +23,20 @@
   .shining-text {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #fff; /* White text */
+    color: #050000; /* White text */
     animation: shine 2s infinite; /* Shining animation */
   }
   
   /* Keyframes for shining effect */
   @keyframes shine {
     0% {
-      text-shadow: 1px 0px 5px #fff, 2px 0px 10px #fff, 3px 0px 15px rgba(255, 255, 255, 0.5);
+      text-shadow: 1px 0px 5px #000000, 2px 0px 10px #000000, 3px 0px 15px rgba(0, 0, 0, 0.5);
     }
     50% {
-      text-shadow: 3px 0px 5px #fff, 5px 0px 10px #fff, 7px 0px 15px rgba(255, 255, 255, 0.5);
+      text-shadow: 3px 0px 5px #020000, 5px 0px 10px #000000, 7px 0px 15px rgba(0, 0, 0, 0.5);
     }
     100% {
-      text-shadow: 1px 0px 5px #fff, 2px 0px 10px #fff, 3px 0px 15px rgba(255, 255, 255, 0.5);
+      text-shadow: 1px 0px 5px #000000, 2px 0px 10px #000000, 3px 0px 15px rgba(1, 0, 0, 0.5);
     }
   }
   
@@ -53,7 +53,7 @@
     h2 {
       margin-bottom: 20px;
       font-size: 1.5rem;
-      color: #fff;
+      color: #030000;
     }
   }
   
@@ -66,7 +66,7 @@
     border: 2px solid transparent;
     font-size: 14px;
     background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #020000;
     transition: all 0.3s ease;
   
     &:focus {
@@ -88,7 +88,7 @@
     padding: 12px;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     background: linear-gradient(90deg, #007bff, #0056b3);
     border: none;
     border-radius: 20px; /* Rounded button */
