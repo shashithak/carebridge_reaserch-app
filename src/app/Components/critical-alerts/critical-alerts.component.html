@@ -19,6 +19,11 @@
       </div>
     </div>
 
+    <!-- Listening Animation -->
+    <div class="listening-animation">
+      <p>We are listening for vital signs...</p>
+    </div>
+
     <!-- Heart Rate and Blood Pressure Gauges -->
     <div class="gauge-container">
       <div class="gauge">
@@ -31,17 +36,23 @@
       </div>
     </div>
 
-    <!-- Critical Alerts Section -->
     <div class="alerts">
       <h3>Critical Alerts</h3>
       <div *ngFor="let alert of alerts" class="alert">
         <p><strong>{{ alert.timestamp | date:'short' }}:</strong> {{ alert.message }}</p>
       </div>
     </div>
-  </div>
-
-  <!-- Listening Animation -->
-  <div class="listening-animation">
-    <p>Listening...</p>
-  </div>
-</div>
+    
+    <!-- Emergency Buttons Bar (Separate from Critical Alerts) -->
+    <div class="emergency-bar">
+      <button class="emergency-btn police">
+        <i class="fa fa-phone"></i> 119 Police Emergency
+      </button>
+      <button class="emergency-btn rescue">
+        <i class="fa fa-phone"></i> 110 Rescue Services
+      </button>
+      <button class="emergency-btn ambulance">
+        <i class="fa fa-ambulance"></i> 1990 Ambulance Service
+      </button>
+    </div>
+    
