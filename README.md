@@ -67,17 +67,50 @@ Offers personalized therapeutic interventions.
 
 
 # 4. Food Calorie Tracker
-Objective:
-To promote healthy eating habits by tracking calorie intake and suggesting improvements.
+
+Overview:
+The Calorie Calculator is an application that estimates calorie content in food using image recognition. It helps users track their dietary intake and create personalized meal plans based on their BMI. The system also allows users to monitor their progress towards their dietary goals.
+
+Technologies Used:
+
+  Angular: Frontend framework for building a user-friendly interface.
+
+  Python: Used for image recognition and calorie estimation.
+
+  Node.js: Backend framework for handling API requests and managing data.
+
+
 
 Key Features:
 
-Integration with a database of food items and their nutritional values.
-User-friendly input for meals and calorie calculations.
-Personalized dietary recommendations based on user goals (weight loss, maintenance, or gain).
-Applications:
-Helps manage diet-related conditions like diabetes and obesity.
-Encourages informed dietary choices.
+  Integration with a database: Stores food items and their nutritional values.
+
+  User-friendly meal input: Allows easy logging of meals and calorie calculations.
+
+  Personalized dietary recommendations: Generates meal plans based on user goals (weight loss, maintenance, or gain).
+
+  Food Image Recognition: Identifies food items from images and calculates their calorie content.
+
+  Calorie Tracking: Logs daily food intake and provides nutritional insights.
+
+  BMI-Based Dietary Plan: Generates a meal plan based on the user's BMI and dietary needs.
+
+  Progress Monitoring: Tracks adherence to the dietary plan and provides recommendations.
+
+  Image-Based Calorie Estimation: Uses food images to estimate calorie content automatically.
+  
+
+How It Works:
+
+  1.User uploads a food image.
+
+  2.The system identifies the food item and estimates its calorie content.
+
+  3.The app logs the meal details and updates the user's calorie intake.
+
+  4.Based on the user's BMI, a personalized dietary plan is created.
+
+  5.Users can track their progress and adjust their meal plans accordingly.
 
 
 ![system](https://github.com/user-attachments/assets/1b8f0840-cd8a-4709-afe2-8a7402e3883f)
