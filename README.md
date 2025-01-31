@@ -69,6 +69,9 @@ User-friendly input for meals and calorie calculations.
 Personalized dietary recommendations based on user goals (weight loss, maintenance, or gain).
 Applications:
 
+![system](https://github.com/user-attachments/assets/1b8f0840-cd8a-4709-afe2-8a7402e3883f)
+
+
 Helps manage diet-related conditions like diabetes and obesity.
 Encourages informed dietary choices.
 Technologies Used
