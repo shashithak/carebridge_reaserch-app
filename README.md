@@ -14,7 +14,9 @@ Critical Alerts Management
 MindCare Assist
 Food Calorie Tracker
 Modules and Features
-1. Behavior Analysis
+
+
+# 1. Behavior Analysis
 Objective:
 To monitor and analyze patients' daily activities and detect behavioral anomalies that may indicate health risks.
 
@@ -27,7 +29,9 @@ Applications:
 
 Early detection of mental health issues.
 Support for elderly care and remote monitoring.
-2. Critical Alerts Management
+
+
+# 2. Critical Alerts Management
 Objective:
 To promptly notify caregivers and medical professionals about critical health events.
 
@@ -40,7 +44,9 @@ Applications:
 
 Timely response to emergencies.
 Enhances patient safety, especially for those with chronic illnesses.
-3. MindCare Assist
+
+
+# 3. MindCare Assist
 Objective:
 To support mental health through mood analysis, ADHD focus aids, and sleep optimization.
 
@@ -58,7 +64,9 @@ Applications:
 
 Enhances mental well-being.
 Offers personalized therapeutic interventions.
-4. Food Calorie Tracker
+
+
+# 4. Food Calorie Tracker
 Objective:
 To promote healthy eating habits by tracking calorie intake and suggesting improvements.
 
@@ -68,12 +76,14 @@ Integration with a database of food items and their nutritional values.
 User-friendly input for meals and calorie calculations.
 Personalized dietary recommendations based on user goals (weight loss, maintenance, or gain).
 Applications:
+Helps manage diet-related conditions like diabetes and obesity.
+Encourages informed dietary choices.
+
 
 ![system](https://github.com/user-attachments/assets/1b8f0840-cd8a-4709-afe2-8a7402e3883f)
 
 
-Helps manage diet-related conditions like diabetes and obesity.
-Encourages informed dietary choices.
+
 Technologies Used
 IoT Components: Wearable devices, smart sensors, and smart lighting systems.
 Software Tools: [Specify tools used, e.g., Angular, Python, Node.js].
